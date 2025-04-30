@@ -1,6 +1,3 @@
-
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -10,30 +7,31 @@
   <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&display=swap" rel="stylesheet">
   <style>
     body {
-  margin: 0;
-  padding: 0;
-  background: linear-gradient(135deg, #f7c1d3, #e0c9f2);
-  color: #6a4e89;
-  font-family: 'Lora', serif;
-  text-align: center;
-  position: relative;
-  overflow-x: hidden;
-  overflow-y: auto;
-}
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(135deg, #f7c1d3, #e0c9f2);
+      color: #6a4e89;
+      font-family: 'Lora', serif;
+      text-align: center;
+      position: relative;
+      overflow-x: hidden;
+    }
 
     h1 {
-      font-size: 6vw; /* Responsive font size */
+      font-size: 6vw;
       color: #ff84a2;
       text-shadow: 0 0 15px #ff82b5, 0 0 20px #e1b4d3;
       margin-top: 5vh;
     }
 
     p {
-      font-size: 4vw; /* Responsive font size */
+      font-size: 4vw;
       color: #5f3a4e;
-      margin-top: 3vh;
+      margin: 3vh auto;
       text-shadow: 0 0 10px rgba(255, 133, 162, 0.7);
       line-height: 1.8;
+      width: 90%;
+      max-width: 600px;
     }
 
     button {
@@ -54,43 +52,51 @@
     }
 
     .spotify-container {
-      margin-top: 6vh;
+      margin: 6vh auto;
       display: flex;
       justify-content: center;
     }
 
     .cloud {
       position: absolute;
-      width: 20vw; /* Responsive cloud size */
-      height: 13vw; /* Responsive cloud size */
-      background: url('https://i.imgur.com/4N0c1GR.png') no-repeat center;
-      background-size: cover;
-      animation: cloudAnimation 45s linear infinite;
+      width: 25vw;
+      height: auto;
+      background-size: contain;
+      background-repeat: no-repeat;
       opacity: 0.6;
-    }
-
-    @keyframes cloudAnimation {
-      0% { transform: translateX(-300px) translateY(0); }
-      100% { transform: translateX(100vw) translateY(-200px); }
-    }
-
-    .cloud:nth-child(odd) {
-      animation-duration: 55s;
-    }
-
-    .cloud:nth-child(even) {
-      animation-duration: 60s;
-    }
-
-    .clouds-container {
+      animation: cloudFloat 60s linear infinite;
       pointer-events: none;
     }
 
-    .button-container {
-      margin-top: 6vh;
+    .cloud:nth-child(1) {
+      top: 10%;
+      left: -30%;
+      background-image: url('https://i.ibb.co/VLLTcwK/cloud1.png');
     }
 
-    /* Ensuring responsiveness on smaller screens */
+    .cloud:nth-child(2) {
+      top: 30%;
+      left: -40%;
+      animation-duration: 80s;
+      background-image: url('https://i.ibb.co/PrGct3P/cloud2.png');
+    }
+
+    .cloud:nth-child(3) {
+      top: 60%;
+      left: -35%;
+      animation-duration: 70s;
+      background-image: url('https://i.ibb.co/fqBrZx3/cloud3.png');
+    }
+
+    @keyframes cloudFloat {
+      0% {
+        transform: translateX(0);
+      }
+      100% {
+        transform: translateX(150vw);
+      }
+    }
+
     @media (max-width: 600px) {
       h1 {
         font-size: 8vw;
@@ -106,8 +112,7 @@
       }
 
       .cloud {
-        width: 25vw;
-        height: 16vw;
+        width: 35vw;
       }
     }
   </style>
@@ -117,27 +122,27 @@
 
   <div>
     <p>
-      From the moment you entered my life, everything became brighter. You are like a dream, a peaceful melody, the quiet beauty that fills the air around us. On this special day, I wish for nothing but joy, love, and happiness to surround you. ❤️
+      From the moment you entered my life, everything became brighter. You are like a dream, a peaceful melody, the quiet beauty that fills the air around us. On this special day, I wish for nothing but joy, love, and happiness to surround you.
     </p>
 
     <p>
-      Today, we celebrate the magic that you bring into the world. Like the soft glow of a sunset, your presence warms the hearts of everyone you meet. You are truly one of a kind. 🌟
+      Today, we celebrate the magic that you bring into the world. Like the soft glow of a sunset, your presence warms the hearts of everyone you meet. You are truly one of a kind.
     </p>
 
     <p>
-      Each moment with you is like a beautiful story unfolding, and I can’t wait to experience more of your warmth, your laughter, and your kindness. 🎶
+      Each moment with you is like a beautiful story unfolding, and I can’t wait to experience more of your warmth, your laughter, and your kindness.
     </p>
 
     <p>
-      I’m grateful for everything you do and everything you are. You’re the kind of person who makes the world a better place just by existing. 🌸✨
+      I’m grateful for everything you do and everything you are. You’re the kind of person who makes the world a better place just by existing.
     </p>
 
     <p>
-      On this day, I wish for your heart to be filled with as much love as you give to everyone around you. May the year ahead be filled with countless beautiful moments, just like you. 💖
+      On this day, I wish for your heart to be filled with as much love as you give to everyone around you. May the year ahead be filled with countless beautiful moments, just like you.
     </p>
 
     <p>
-      Here’s to another year of beautiful adventures and cherished memories. Happy birthday, my dear friend! 🎂🎉
+      Here’s to another year of beautiful adventures and cherished memories. Happy birthday, my dear friend!
     </p>
   </div>
 
@@ -146,26 +151,21 @@
   </div>
 
   <div class="spotify-container">
-    <!-- Replace with your actual Spotify playlist link -->
-    <iframe style="border-radius:12px" 
-      src="https://open.spotify.com/embed/playlist/2sf7jaaBQIC319JFoLTqGh?utm_source=generator" 
-      width="300" height="80" frameBorder="0" 
+    <iframe style="border-radius:12px"
+      src="https://open.spotify.com/embed/playlist/2sf7jaaBQIC319JFoLTqGh?utm_source=generator"
+      width="300" height="80" frameBorder="0"
       allowtransparency="true" allow="encrypted-media">
     </iframe>
   </div>
 
-  <div class="clouds-container">
-    <!-- Clouds roaming the screen -->
-    <div class="cloud" style="top: 10%; left: 5%;"></div>
-    <div class="cloud" style="top: 25%; left: 15%;"></div>
-    <div class="cloud" style="top: 40%; left: 30%;"></div>
-    <div class="cloud" style="top: 55%; left: 60%;"></div>
-    <div class="cloud" style="top: 70%; left: 80%;"></div>
-  </div>
+  <!-- Clouds -->
+  <div class="cloud"></div>
+  <div class="cloud"></div>
+  <div class="cloud"></div>
 
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
   <script>
     function celebrate() {
-      alert("Let the celebration begin!");
       confetti({
         particleCount: 200,
         spread: 100,
