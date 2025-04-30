@@ -56,27 +56,9 @@
     .cloud:nth-child(3) { top: 50%; animation-duration: 90s; }
     .cloud:nth-child(4) { top: 70%; animation-duration: 75s; }
 
-    .confetti-button {
-      display: block;
-      margin: 5vh auto;
-      padding: 15px 30px;
-      font-size: 5vw;
-      background-color: #ff84a2;
-      color: white;
-      border: none;
-      border-radius: 12px;
-      cursor: pointer;
-      box-shadow: 0 0 10px #fff, 0 0 20px #ff84a2;
-    }
-
-    .confetti-button:hover {
-      transform: scale(1.05);
-    }
-
     @media (max-width: 600px) {
       h1 { font-size: 10vw; }
       p { font-size: 6vw; margin: 4vh 5vw; }
-      .confetti-button { font-size: 6vw; }
     }
   </style>
 </head>
@@ -89,8 +71,6 @@
   <p>Each moment with you is like a beautiful story unfolding, and I can’t wait to experience more of your warmth, your laughter, and your kindness.</p>
   <p>I’m grateful for everything you do and everything you are. You make the world better just by being you.</p>
   <p>On this day, I wish your heart is full of joy and love as vibrant as your spirit. Here’s to more beautiful adventures and memories. Happy birthday!</p>
-
-  <button class="confetti-button" onclick="celebrate()">Celebrate!</button>
 
   <div class="spotify-container">
     <iframe style="border-radius:12px" 
@@ -106,16 +86,5 @@
   <div class="cloud" style="left: -90vw;"></div>
   <div class="cloud" style="left: -120vw;"></div>
 
-  <!-- Confetti Script -->
-  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
-  <script>
-    function celebrate() {
-      confetti({
-        particleCount: 150,
-        spread: 100,
-        origin: { y: 0.6 }
-      });
-    }
-  </script>
 </body>
 </html>
