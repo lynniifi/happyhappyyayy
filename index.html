@@ -1,177 +1,105 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Happy Birthday!</title>
-  <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&display=swap" rel="stylesheet" />
   <style>
-    body {
+    html, body {
       margin: 0;
       padding: 0;
-      background: linear-gradient(135deg, #f7c1d3, #e0c9f2);
-      color: #6a4e89;
+      height: 100%;
       font-family: 'Lora', serif;
-      text-align: center;
-      position: relative;
+      background: url('https://i.postimg.cc/52NRqvJv/IMG-6764.jpg') no-repeat center center fixed;
+      background-size: cover;
+      color: #fff;
       overflow-x: hidden;
+      overflow-y: auto;
     }
 
     h1 {
-      font-size: 6vw;
-      color: #ff84a2;
-      text-shadow: 0 0 15px #ff82b5, 0 0 20px #e1b4d3;
+      font-size: 7vw;
       margin-top: 5vh;
+      text-align: center;
+      color: #fff;
+      text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.7);
+    }
+
+    .content {
+      max-width: 90%;
+      margin: 4vh auto;
+      padding: 5vw;
+      background: rgba(255, 255, 255, 0.35);
+      backdrop-filter: blur(5px);
+      border-radius: 20px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
     }
 
     p {
-      font-size: 4vw;
-      color: #5f3a4e;
-      margin: 3vh auto;
-      text-shadow: 0 0 10px rgba(255, 133, 162, 0.7);
-      line-height: 1.8;
-      width: 90%;
-      max-width: 600px;
-    }
-
-    button {
-      padding: 12px 24px;
-      font-size: 4vw;
-      background: #d6b0d4;
-      border: none;
-      border-radius: 15px;
-      cursor: pointer;
-      color: white;
-      box-shadow: 0 0 10px #fff, 0 0 20px #ff84a2;
-      margin-top: 40px;
-      transition: transform 0.3s ease-in-out;
-    }
-
-    button:hover {
-      transform: scale(1.1);
+      font-size: 5vw;
+      line-height: 1.6;
+      color: #fff;
+      text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
     }
 
     .spotify-container {
-      margin: 6vh auto;
+      margin: 5vh auto;
       display: flex;
       justify-content: center;
     }
 
-    .cloud {
-      position: absolute;
-      width: 25vw;
-      height: auto;
-      background-size: contain;
-      background-repeat: no-repeat;
-      opacity: 0.6;
-      animation: cloudFloat 60s linear infinite;
-      pointer-events: none;
+    button {
+      font-size: 5vw;
+      padding: 10px 20px;
+      background: rgba(255, 192, 203, 0.7);
+      border: none;
+      border-radius: 12px;
+      color: white;
+      text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+      box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+      cursor: pointer;
+      transition: transform 0.2s ease;
+      margin: 4vh auto;
+      display: block;
     }
 
-    .cloud:nth-child(1) {
-      top: 10%;
-      left: -30%;
-      background-image: url('https://i.ibb.co/VLLTcwK/cloud1.png');
-    }
-
-    .cloud:nth-child(2) {
-      top: 30%;
-      left: -40%;
-      animation-duration: 80s;
-      background-image: url('https://i.ibb.co/PrGct3P/cloud2.png');
-    }
-
-    .cloud:nth-child(3) {
-      top: 60%;
-      left: -35%;
-      animation-duration: 70s;
-      background-image: url('https://i.ibb.co/fqBrZx3/cloud3.png');
-    }
-
-    @keyframes cloudFloat {
-      0% {
-        transform: translateX(0);
-      }
-      100% {
-        transform: translateX(150vw);
-      }
-    }
-
-    @media (max-width: 600px) {
-      h1 {
-        font-size: 8vw;
-      }
-
-      p {
-        font-size: 5vw;
-      }
-
-      button {
-        font-size: 5vw;
-        padding: 10px 20px;
-      }
-
-      .cloud {
-        width: 35vw;
-      }
+    button:hover {
+      transform: scale(1.05);
     }
   </style>
 </head>
 <body>
   <h1>Happy Birthday!</h1>
 
-  <div>
+  <div class="content">
     <p>
       From the moment you entered my life, everything became brighter. You are like a dream, a peaceful melody, the quiet beauty that fills the air around us. On this special day, I wish for nothing but joy, love, and happiness to surround you.
     </p>
-
     <p>
       Today, we celebrate the magic that you bring into the world. Like the soft glow of a sunset, your presence warms the hearts of everyone you meet. You are truly one of a kind.
     </p>
-
     <p>
       Each moment with you is like a beautiful story unfolding, and I can’t wait to experience more of your warmth, your laughter, and your kindness.
     </p>
-
     <p>
       I’m grateful for everything you do and everything you are. You’re the kind of person who makes the world a better place just by existing.
     </p>
-
     <p>
       On this day, I wish for your heart to be filled with as much love as you give to everyone around you. May the year ahead be filled with countless beautiful moments, just like you.
     </p>
-
     <p>
       Here’s to another year of beautiful adventures and cherished memories. Happy birthday, my dear friend!
     </p>
   </div>
 
-  <div class="button-container">
-    <button onclick="celebrate()">Celebrate</button>
-  </div>
+  <button onclick="alert('Let the celebration begin!')">Celebrate</button>
 
   <div class="spotify-container">
-    <iframe style="border-radius:12px"
-      src="https://open.spotify.com/embed/playlist/2sf7jaaBQIC319JFoLTqGh?utm_source=generator"
-      width="300" height="80" frameBorder="0"
-      allowtransparency="true" allow="encrypted-media">
+    <iframe style="border-radius:12px" 
+      src="https://open.spotify.com/embed/playlist/2sf7jaaBQIC319JFoLTqGh?utm_source=generator" 
+      width="300" height="80" frameborder="0" allowtransparency="true" allow="encrypted-media">
     </iframe>
   </div>
-
-  <!-- Clouds -->
-  <div class="cloud"></div>
-  <div class="cloud"></div>
-  <div class="cloud"></div>
-
-  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
-  <script>
-    function celebrate() {
-      confetti({
-        particleCount: 200,
-        spread: 100,
-        origin: { y: 0.6 }
-      });
-    }
-  </script>
 </body>
 </html>
