@@ -11,9 +11,10 @@
       padding: 0;
       height: 100%;
       font-family: 'Lora', serif;
+      color: #fff;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
       background: url('https://i.postimg.cc/52NRqvJv/IMG-6764.jpg') no-repeat center center fixed;
       background-size: cover;
-      color: #fff;
       overflow-x: hidden;
       overflow-y: auto;
     }
@@ -21,26 +22,19 @@
     h1 {
       font-size: 7vw;
       margin-top: 5vh;
-      text-align: center;
       color: #fff;
-      text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.7);
-    }
-
-    .content {
-      max-width: 90%;
-      margin: 4vh auto;
-      padding: 5vw;
-      background: rgba(255, 255, 255, 0.35);
-      backdrop-filter: blur(5px);
-      border-radius: 20px;
-      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+      text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.5);
     }
 
     p {
       font-size: 5vw;
+      max-width: 90%;
+      margin: 4vh auto;
       line-height: 1.6;
+      background-color: rgba(255, 255, 255, 0.3);
+      padding: 10px;
+      border-radius: 15px;
       color: #fff;
-      text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
     }
 
     .spotify-container {
@@ -60,8 +54,7 @@
       box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
       cursor: pointer;
       transition: transform 0.2s ease;
-      margin: 4vh auto;
-      display: block;
+      margin-bottom: 5vh;
     }
 
     button:hover {
@@ -72,34 +65,31 @@
 <body>
   <h1>Happy Birthday!</h1>
 
-  <div class="content">
-    <p>
-      From the moment you entered my life, everything became brighter. You are like a dream, a peaceful melody, the quiet beauty that fills the air around us. On this special day, I wish for nothing but joy, love, and happiness to surround you.
-    </p>
-    <p>
-      Today, we celebrate the magic that you bring into the world. Like the soft glow of a sunset, your presence warms the hearts of everyone you meet. You are truly one of a kind.
-    </p>
-    <p>
-      Each moment with you is like a beautiful story unfolding, and I can’t wait to experience more of your warmth, your laughter, and your kindness.
-    </p>
-    <p>
-      I’m grateful for everything you do and everything you are. You’re the kind of person who makes the world a better place just by existing.
-    </p>
-    <p>
-      On this day, I wish for your heart to be filled with as much love as you give to everyone around you. May the year ahead be filled with countless beautiful moments, just like you.
-    </p>
-    <p>
-      Here’s to another year of beautiful adventures and cherished memories. Happy birthday, my dear friend!
-    </p>
+  <p>
+    From the moment you entered my life, everything became brighter. You are like a dream, a peaceful melody, the quiet beauty that fills the air around us. On this special day, I wish for nothing but joy, love, and happiness to surround you.
+  </p>
+  <p>
+    Today, we celebrate the magic that you bring into the world. Like the soft glow of a sunset, your presence warms the hearts of everyone you meet. You are truly one of a kind.
+  </p>
+  <p>
+    Each moment with you is like a beautiful story unfolding, and I can’t wait to experience more of your warmth, your laughter, and your kindness.
+  </p>
+  <p>
+    I’m grateful for everything you do and everything you are. You’re the kind of person who makes the world a better place just by existing.
+  </p>
+  <p>
+    On this day, I wish for your heart to be filled with as much love as you give to everyone around you. May the year ahead be filled with countless beautiful moments, just like you.
+  </p>
+  <p>
+    Here’s to another year of beautiful adventures and cherished memories. Happy birthday, my dear friend!
+  </p>
+
+  <div style="text-align: center;">
+    <button onclick="alert('Let the celebration begin!')">Celebrate</button>
   </div>
 
-  <button onclick="alert('Let the celebration begin!')">Celebrate</button>
-
   <div class="spotify-container">
-    <iframe style="border-radius:12px" 
-      src="https://open.spotify.com/embed/playlist/2sf7jaaBQIC319JFoLTqGh?utm_source=generator" 
-      width="300" height="80" frameborder="0" allowtransparency="true" allow="encrypted-media">
-    </iframe>
+    <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/2sf7jaaBQIC319JFoLTqGh?utm_source=generator" width="300" height="80" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
   </div>
 </body>
 </html>
