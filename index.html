@@ -23,6 +23,7 @@
       font-size: 7vw;
       margin-top: 5vh;
       color: #fff;
+      text-align: center;
       text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.5);
     }
 
@@ -37,16 +38,10 @@
       color: #fff;
     }
 
-    .spotify-container {
-      margin: 5vh auto;
-      display: flex;
-      justify-content: center;
-    }
-
     button {
       font-size: 5vw;
       padding: 10px 20px;
-      background: rgba(100, 100, 255, 0.8);
+      background-color: rgba(255, 255, 255, 0.3);
       border: none;
       border-radius: 12px;
       color: white;
@@ -59,6 +54,26 @@
 
     button:hover {
       transform: scale(1.05);
+    }
+
+    .link-container {
+      text-align: center;
+      margin: 5vh auto;
+    }
+
+    .link-container a {
+      font-size: 4vw;
+      color: #fff;
+      text-decoration: underline;
+      background-color: rgba(255, 255, 255, 0.3);
+      padding: 8px 16px;
+      border-radius: 12px;
+      display: inline-block;
+      text-shadow: 1px 1px 4px rgba(0,0,0,0.5);
+    }
+
+    .link-container a:hover {
+      background-color: rgba(255, 255, 255, 0.4);
     }
   </style>
 </head>
@@ -88,8 +103,8 @@
     <button id="celebrateBtn">Celebrate</button>
   </div>
 
-  <div class="spotify-container">
-    <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/2sf7jaaBQIC319JFoLTqGh?utm_source=generator" width="300" height="80" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+  <div class="link-container">
+    <a href="https://open.spotify.com/playlist/2sf7jaaBQIC319JFoLTqGh" target="_blank">🎶 Birthday Playlist</a>
   </div>
 
   <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
