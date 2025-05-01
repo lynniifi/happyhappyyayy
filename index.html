@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Happy Birthday!</title>
   <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&display=swap" rel="stylesheet" />
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
   <style>
     html, body {
       margin: 0;
@@ -46,7 +47,7 @@
     button {
       font-size: 5vw;
       padding: 10px 20px;
-      background: rgba(255, 192, 203, 0.7);
+      background: rgba(100, 100, 255, 0.8); /* non-pink slay */
       border: none;
       border-radius: 12px;
       color: white;
@@ -85,11 +86,22 @@
   </p>
 
   <div style="text-align: center;">
-    <button onclick="alert('Let the celebration begin!')">Celebrate</button>
+    <button onclick="launchConfetti()">Celebrate</button>
   </div>
 
   <div class="spotify-container">
     <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/2sf7jaaBQIC319JFoLTqGh?utm_source=generator" width="300" height="80" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
   </div>
+
+  <script>
+    function launchConfetti() {
+      confetti({
+        particleCount: 150,
+        spread: 80,
+        origin: { y: 0.6 },
+        colors: ['#bb0000', '#ffffff', '#00bbff', '#f5a623']
+      });
+    }
+  </script>
 </body>
 </html>
